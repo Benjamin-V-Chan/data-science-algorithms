@@ -97,3 +97,19 @@ def heap_sort(arr):
         heapify(arr, i, 0)
 
     return arr
+
+# TESTING SORTING ALGORITHMS
+def test_sorting_algorithms():
+    """Tests all sorting algorithms with a random dataset."""
+    arr = [random.randint(1, 100) for _ in range(10)]
+    
+    print("Original Array:", arr)
+    print("Bubble Sort:", bubble_sort(arr.copy()))
+    print("Selection Sort:", selection_sort(arr.copy()))
+    print("Insertion Sort:", insertion_sort(arr.copy()))
+    print("Merge Sort:", merge_sort(arr.copy()))
+    print("Quick Sort:", quick_sort(arr.copy()))
+    print("Heap Sort:", heap_sort(arr.copy()))
+
+# Run tests
+test_sorting_algorithms()
